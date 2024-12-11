@@ -18,6 +18,14 @@ docker compose up -d
 
 ## 5. Tag and Push
 
+```shell
+az login
+```
+
+```shell
+az acr login --name agentops
+```
+
 ### supabase/edge-runtime:v1.65.3
 ```shell
 docker tag supabase/edge-runtime:v1.65.3 supabase.azurecr.io/supabase-edge && \
